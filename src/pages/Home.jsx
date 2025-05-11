@@ -1,7 +1,6 @@
 // src/pages/Home.jsx
 
-import { Box, Container, Typography, Button, Chip, Grid } from "@mui/material";
-import MovieCard from "../components/MovieCard";
+import { Box, Typography } from "@mui/material";
 import HeroBanner from "../components/HeroBanner";
 import MovieCarousel from "../components/MovieCarousel";
 import Footer from "../components/Footer";

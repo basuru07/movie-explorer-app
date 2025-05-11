@@ -29,7 +29,7 @@ export default function Header({ toggleDarkMode, darkMode }) {
   const [loggedIn, setLoggedIn] = useState(
     localStorage.getItem("loggedIn") === "true"
   );
-  const [username, setUsername] = useState(
+  const [, setUsername] = useState(
     localStorage.getItem("username") || ""
   );
   const [anchorEl, setAnchorEl] = useState(null); // Anchor element for account menu

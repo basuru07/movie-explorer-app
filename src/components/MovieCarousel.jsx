@@ -1,7 +1,7 @@
 // src/components/MovieCarousel.jsx
 
 import { useEffect, useState } from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 import tmdb from '../api/tmdb'; // Custom Axios instance with TMDb API base URL and key
 

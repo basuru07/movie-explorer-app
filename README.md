@@ -1,74 +1,89 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# 🎬 Movie Explorer App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Movie Explorer** is a modern React web application for discovering, exploring, and managing your favorite movies. It fetches real-time data from [TMDb (The Movie Database)](https://www.themoviedb.org/) API and provides features like trending movies, search suggestions, favorites, login simulation, and search history — all wrapped in a sleek, responsive UI.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features Implemented
 
-### `npm start`
+- 🔍 **Search Movies** with real-time suggestions
+- 📈 **Trending & Popular Movie Sections**
+- ❤️ **Add to Favorites** and manage personalized list
+- 🕵️ **Search History Tracking** with infinite scroll
+- 🎬 **Movie Details View** with metadata, cast, trailer, and ratings
+- 🔐 **Login Screen** (mock login for demo)
+- 🌙 **Dark/Light Mode Toggle**
+- 📱 **Responsive Design** for all screen sizes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧰 Tech Stack
 
-### `npm test`
+- **React** (with Hooks)
+- **React Router DOM**
+- **Material-UI (MUI v5)** for styling
+- **Axios** for API communication
+- **TMDb API** for movie data
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Project Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. **Clone the repository**
+```bash
+git clone https://github.com/basuru07/movie-explorer-app.git
+cd movie-explorer-app
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. **Install dependencies**
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. **Run the development server**
+```bash
+npm start
+```
 
-### `npm run eject`
+The app will be available at: https://rad-bunny-800d9b.netlify.app/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🔑 TMDb API Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This app uses TMDb API for movie data. API calls include:
+* `/movie/popular`
+* `/movie/top_rated`
+* `/trending/movie/day`
+* `/search/movie?query=...`
+* `/movie/{movie_id}`
+* `/movie/{movie_id}/videos`
+* `/movie/{movie_id}/credits`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+⚠️ The API key is pre-configured inside `src/api/tmdb.js` using Axios. For production, it is recommended to use environment variables (`.env`).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🗂️ Folder Structure
 
-## Learn More
+```
+src/
+├── api/            # Axios TMDb setup
+├── components/     # Reusable UI components
+├── context/        # Theme context for dark/light mode
+├── pages/          # Route-based pages (Home, Login, Favorites, etc.)
+├── App.jsx         # Main App with routing
+├── index.js
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🧪 Test Login
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This is a **demo login** for basic authentication simulation.
+* **Username:** `admin`
+* **Password:** `admin`
 
-### Code Splitting
+Once logged in, you can access:
+* 💾 Favorites
+* 🕓 Search History
+* 🎛️ Persistent login with localStorage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📸 Screenshots
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# movie-explorer-app
->>>>>>> a747195790614bea405962e43d71520af498df13
+![Home Page](screenshots/home.png)
+![Movie Detail](screenshots/details.png)

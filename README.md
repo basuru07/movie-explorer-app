@@ -1,10 +1,12 @@
 # 🎬 Movie Explorer App
 
-**Movie Explorer** is a modern React web application for discovering, exploring, and managing your favorite movies. It fetches real-time data from [TMDb (The Movie Database)](https://www.themoviedb.org/) API and provides features like trending movies, search suggestions, favorites, login simulation, and search history — all wrapped in a sleek, responsive UI.
+**Movie Explorer** is a modern React web application for discovering, exploring, and managing your favorite movies. It fetches real-time data from [TMDb (The Movie Database)](https://www.themoviedb.org/) API and provides features like trending movies, search suggestions, favorites, login simulation, and search history all wrapped in a sleek, responsive UI.
 
-**[✨ Live Demo](https://rad-bunny-800d9b.netlify.app/)**
+**[✨ Deployed live link](https://rad-bunny-800d9b.netlify.app/)**
 
-![App Preview](https://via.placeholder.com/800x400.png?text=Movie+Explorer+App)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/5987c05b-1569-4981-aee6-679dc9a1f901" alt="App Preview" width="600" />
+</div>
 
 ## 🚀 Features
 
@@ -116,10 +118,17 @@ Once logged in, you can access:
 
 ## 📸 Screenshots
 
-<div>
-  <img src="screenshots/home.png" alt="Home Page" width="48%"/>
-  <img src="screenshots/details.png" alt="Movie Detail" width="48%"/>
+<div align="center">
+  <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+    <img src="https://github.com/user-attachments/assets/ac256cdd-f736-4a68-af00-2024fa8b1f0a" alt="Home Page" width="48%" style="margin-right: 2%"/>
+    <img src="https://github.com/user-attachments/assets/c8874827-ecac-4e28-9e82-b012dd4d1333" alt="Movie Details" width="48%"/>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <img src="https://github.com/user-attachments/assets/f6d61c63-3bf7-4b23-b06a-39811deab6f4" alt="Favorites Page" width="48%" style="margin-right: 2%"/>
+    <img src="https://github.com/user-attachments/assets/c5171dac-b54d-4df3-aa91-b2b5c0c4e329" alt="Search Results" width="48%"/>
+  </div>
 </div>
+
 
 ## 🚀 Deployment
 
